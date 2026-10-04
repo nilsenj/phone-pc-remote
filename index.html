@@ -1,24 +1,65 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Phone PC Remote</title>
-<style>
-  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:0 auto;padding:32px 16px;line-height:1.6;color:#1b1b1f;background:#fff}
-  a{color:#1a5fd6} .muted{color:#5f6368}
-  @media (prefers-color-scheme:dark){body{background:#121212;color:#e8eaed}.muted{color:#9aa0a6}a{color:#8ab4f8}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Phone PC Remote lets you control a Windows or Ubuntu computer from your Android phone over your local network. Download the Android app and desktop companion.">
+  <link rel="canonical" href="https://nilsenj.github.io/phone-pc-remote/">
+  <title>Phone PC Remote — Android, Windows and Ubuntu downloads</title>
+  <style>
+    :root{color-scheme:light dark;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.55}
+    body{max-width:940px;margin:0 auto;padding:24px 18px 60px;background:#faf9fc;color:#20212a}
+    header{padding:34px 0 18px}h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.1;margin:.2em 0}
+    h2{margin-top:2.3rem}p{max-width:72ch}a{color:#5140af}.lead{font-size:1.2rem;color:#45434e}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:22px}
+    .card{background:white;border:1px solid #ddd9e7;border-radius:18px;padding:22px;display:flex;flex-direction:column}
+    .card h3{font-size:1.3rem;margin:0 0 6px}.card p{margin:6px 0 18px}.card .action{margin-top:auto}
+    .button{display:inline-block;background:#5945b4;color:white;text-decoration:none;font-weight:650;border-radius:10px;padding:11px 16px}
+    .button:hover,.button:focus-visible{background:#44338e}.secondary{background:#ece8f8;color:#302461}.secondary:hover,.secondary:focus-visible{background:#dcd5f2}
+    .note{color:#595762;font-size:.94rem}.warning{border-left:4px solid #9a6c00;padding-left:14px;margin-top:20px}
+    ol{padding-left:1.5rem}li{margin-bottom:9px}footer{margin-top:48px;border-top:1px solid #ddd9e7;padding-top:18px}
+    @media(prefers-color-scheme:dark){body{background:#15141b;color:#f2f0f7}.lead,.note{color:#c5c1d0}.card{background:#211f2a;border-color:#413e4d}a{color:#b8a9ff}.button{color:#fff}.secondary{background:#38304f;color:#efe9ff}footer{border-color:#413e4d}}
+  </style>
 </head>
 <body>
-<h1>Phone PC Remote</h1>
-<p>Use your Android phone as a trackpad, keyboard and remote for your computer and smart TV — over Bluetooth, or over Wi-Fi with the free Windows and Ubuntu companion app.</p>
-<ul>
-  <li><a href="https://play.google.com/store/apps/details?id=dev.phonepcremote.app">Get it on Google Play</a></li>
-  <li><a href="privacy.html">Privacy policy</a></li>
-</ul>
-<h2>Support</h2>
-<p>Email <a href="mailto:nikoleivan@gmail.com">nikoleivan@gmail.com</a></p>
-<p class="muted">No accounts. No cloud relay. Control stays on your local network.</p>
+  <header>
+    <p class="note">LOCAL NETWORK REMOTE CONTROL</p>
+    <h1>Phone PC Remote</h1>
+    <p class="lead">Use your Android phone as a trackpad, keyboard and remote for your Windows or Ubuntu computer. Pair once with a QR code; both devices communicate on your local network.</p>
+    <p><a class="button" href="https://github.com/nilsenj/phone-pc-remote-releases/releases/tag/android-v0.1.26">Get the Android app</a></p>
+  </header>
+  <main>
+    <h2>Get the apps</h2>
+    <p>You need the Android app and a desktop companion on the computer you want to control.</p>
+    <div class="grid">
+      <section class="card" aria-labelledby="android-title">
+        <h3 id="android-title">Android phone</h3>
+        <p>Download the signed 0.1.26 APK from our public GitHub release. Google Play is currently limited to testers, not a public download.</p>
+        <p class="action"><a class="button" href="https://github.com/nilsenj/phone-pc-remote-releases/releases/tag/android-v0.1.26">Download Android APK</a></p>
+      </section>
+      <section class="card" aria-labelledby="windows-title">
+        <h3 id="windows-title">Windows 11 PC</h3>
+        <p>Install the free Windows companion from Microsoft Store. This is an MSIX Store app, not an EXE installer. Phone-as-webcam is not supported on Windows.</p>
+        <p class="action"><a class="button" href="https://apps.microsoft.com/detail/9NP7CKV77CRK">Install from Microsoft Store</a></p>
+      </section>
+      <section class="card" aria-labelledby="ubuntu-title">
+        <h3 id="ubuntu-title">Ubuntu PC <small>(beta)</small></h3>
+        <p>Download the 0.1.26 amd64 .deb for Ubuntu 24.04+. Phone-as-webcam works in the tested VM, but physical-hardware validation and crash recovery remain incomplete.</p>
+        <p class="action"><a class="button secondary" href="https://github.com/nilsenj/phone-pc-remote-releases/releases/tag/desktop-v0.1.26-beta.1">Download Ubuntu beta</a></p>
+      </section>
+    </div>
+    <p class="note warning">The GitHub Android APK uses a different signing certificate from Google Play. It cannot update a Play installation, or be updated by one. Switching channels may require uninstalling and can erase pairings or app data. Do not uninstall an existing Play build just to try this APK.</p>
+    <h2>Connect in three steps</h2>
+    <ol>
+      <li>Install the Android app and the Windows or Ubuntu companion.</li>
+      <li>Connect both devices to a local network where they can reach each other; guest Wi-Fi or device isolation may block pairing.</li>
+      <li>Open the desktop app and scan its pairing QR code with the Android app. Keep pairing codes private.</li>
+    </ol>
+    <p><a href="https://github.com/nilsenj/phone-pc-remote-releases/blob/main/INSTALL.md">Full installation and update instructions</a> · <a href="https://github.com/nilsenj/phone-pc-remote-releases/issues">Report a problem</a></p>
+  </main>
+  <footer>
+    <p>Support: <a href="mailto:nikoleivan@gmail.com">nikoleivan@gmail.com</a> · <a href="privacy.html">Privacy policy</a></p>
+    <p class="note">No account or cloud relay is needed for local control. No Bluetooth mode is offered in this release.</p>
+  </footer>
 </body>
 </html>
