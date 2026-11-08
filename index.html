@@ -3,14 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Phone PC Remote lets you control a Windows or Ubuntu computer from your Android phone over your local network. Download the Android app and desktop companion.">
+  <meta name="description" content="Use Android as a Wi-Fi mouse and keyboard for Windows or Ubuntu, or as a remote for a supported smart TV. Official downloads and pairing instructions.">
   <link rel="canonical" href="https://nilsenj.github.io/phone-pc-remote/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Phone PC Remote — Android, Windows and Ubuntu downloads">
-  <meta property="og:description" content="Control your Windows or Ubuntu computer from Android. Get the Android app, Windows Store companion or Ubuntu beta in one place.">
+  <meta property="og:description" content="Control your Windows or Ubuntu computer from Android. Get the app on Google Play and download the Windows or Ubuntu companion.">
   <meta property="og:url" content="https://nilsenj.github.io/phone-pc-remote/">
   <meta name="twitter:card" content="summary">
   <title>Phone PC Remote — Android, Windows and Ubuntu downloads</title>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Phone PC Remote",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Android",
+  "description": "Use Android as a trackpad and keyboard for Windows or Ubuntu, or as a remote for a supported smart TV on your local network.",
+  "url": "https://nilsenj.github.io/phone-pc-remote/",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=dev.phonepcremote.app",
+  "offers": {
+    "@type": "Offer",
+    "price": 0,
+    "priceCurrency": "USD"
+  }
+}
+  </script>
   <style>
     :root{color-scheme:light dark;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.55}
     body{max-width:940px;margin:0 auto;padding:24px 18px 60px;background:#faf9fc;color:#20212a}
@@ -21,7 +38,7 @@
     .card h3{font-size:1.3rem;margin:0 0 6px}.card p{margin:6px 0 18px}.card .action{margin-top:auto}
     .button{display:inline-block;background:#5945b4;color:white;text-decoration:none;font-weight:650;border-radius:10px;padding:11px 16px}
     .button:hover,.button:focus-visible{background:#44338e}.secondary{background:#ece8f8;color:#302461}.secondary:hover,.secondary:focus-visible{background:#dcd5f2}
-    .note{color:#595762;font-size:.94rem}.warning{border-left:4px solid #9a6c00;padding-left:14px;margin-top:20px}
+    .note{color:#595762;font-size:.94rem}
     ol{padding-left:1.5rem}li{margin-bottom:9px}footer{margin-top:48px;border-top:1px solid #ddd9e7;padding-top:18px}
     @media(prefers-color-scheme:dark){body{background:#15141b;color:#f2f0f7}.lead,.note{color:#c5c1d0}.card{background:#211f2a;border-color:#413e4d}a{color:#b8a9ff}.button{color:#fff}.secondary{background:#38304f;color:#efe9ff}footer{border-color:#413e4d}}
   </style>
@@ -30,17 +47,17 @@
   <header>
     <p class="note">LOCAL NETWORK REMOTE CONTROL</p>
     <h1>Phone PC Remote</h1>
-    <p class="lead">Use your Android phone as a trackpad, keyboard and remote for your Windows or Ubuntu computer. Pair once with a QR code; both devices communicate on your local network.</p>
-    <p><a class="button" href="https://github.com/nilsenj/phone-pc-remote-releases/releases/tag/android-v0.1.28">Get the Android app</a></p>
+    <p class="lead">Use your Android phone as a trackpad, keyboard and remote for your Windows or Ubuntu computer. Pair with a QR code over your local network. You can also control supported smart TVs.</p>
+    <p><a class="button" href="https://play.google.com/store/apps/details?id=dev.phonepcremote.app">Get it on Google Play</a></p>
   </header>
   <main>
     <h2>Get the apps</h2>
-    <p>You need the Android app and a desktop companion on the computer you want to control.</p>
+    <p>For computer control, install the Android app and the companion on the computer you want to control.</p>
     <div class="grid">
       <section class="card" aria-labelledby="android-title">
         <h3 id="android-title">Android phone</h3>
-        <p>Download the signed 0.1.28 APK from our public GitHub release. Google Play is currently limited to testers, not a public download. Paid checkout is disabled in the GitHub build; use Play Alpha for Pro purchase testing.</p>
-        <p class="action"><a class="button" href="https://github.com/nilsenj/phone-pc-remote-releases/releases/tag/android-v0.1.28">Download Android APK</a></p>
+        <p>Install Phone PC Remote from Google Play. The app is free to download and offers an optional one-time Pro purchase.</p>
+        <p class="action"><a class="button" href="https://play.google.com/store/apps/details?id=dev.phonepcremote.app">Get it on Google Play</a></p>
       </section>
       <section class="card" aria-labelledby="windows-title">
         <h3 id="windows-title">Windows 11 PC</h3>
@@ -53,13 +70,19 @@
         <p class="action"><a class="button secondary" href="https://github.com/nilsenj/phone-pc-remote-releases/releases/tag/desktop-v0.1.26-beta.1">Download Ubuntu beta</a></p>
       </section>
     </div>
-    <p class="note warning">The GitHub Android APK uses a different signing certificate from Google Play. It cannot update a Play installation, or be updated by one. Switching channels may require uninstalling and can erase pairings or app data. Do not uninstall an existing Play build just to try this APK.</p>
     <h2>Connect in three steps</h2>
     <ol>
       <li>Install the Android app and the Windows or Ubuntu companion.</li>
       <li>Connect both devices to a local network where they can reach each other; guest Wi-Fi or device isolation may block pairing.</li>
       <li>Open the desktop app and scan its pairing QR code with the Android app. Keep pairing codes private.</li>
     </ol>
+    <h2>Compatibility and common questions</h2>
+    <h3>Can I use Android as a mouse and keyboard for Windows or Ubuntu?</h3>
+    <p>Yes. Install the Windows 11 companion from Microsoft Store or the amd64 beta for Ubuntu 24.04 and later. The phone and computer must be able to reach each other on the local network. The computer can use Wi-Fi or Ethernet.</p>
+    <h3>Can I control a TV without a computer?</h3>
+    <p>Yes. Open Add TV in the Android app and follow the prompts for a supported LG webOS, Samsung, or Google TV / Android TV device. Available controls vary by model.</p>
+    <h3>What does Pro add?</h3>
+    <p>Pro includes PC screen mirroring, unlimited saved PCs, and phone-as-webcam on supported Ubuntu setups. Webcam support is unavailable in the Windows companion.</p>
     <p><a href="https://github.com/nilsenj/phone-pc-remote-releases/blob/main/INSTALL.md">Full installation and update instructions</a> · <a href="https://github.com/nilsenj/phone-pc-remote-releases/issues">Report a problem</a></p>
   </main>
   <footer>
