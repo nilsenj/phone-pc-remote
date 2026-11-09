@@ -1,0 +1,8 @@
+# Phone PC Remote
+
+> Android app for controlling a Windows 11 or Ubuntu 24.04+ computer or a supported smart TV on a local network.
+
+- [Official downloads and setup](https://nilsenj.github.io/phone-pc-remote/): Google Play, Microsoft Store, Ubuntu beta, and pairing instructions.
+- [AI setup guide](https://nilsenj.github.io/phone-pc-remote/ai.html): Local MCP connector, client configuration, tools, and troubleshooting.
+- [Releases and checksums](https://github.com/nilsenj/phone-pc-remote-releases/releases): Public release notes and download assets.
+- [Privacy policy](https://nilsenj.github.io/phone-pc-remote/privacy.html): Data handling and support.
